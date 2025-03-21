@@ -1,14 +1,17 @@
 package nintendo;
 
+import java.util.List;
+
 public class Client {
 	private String nom;
 	private String prenom;
+	private List<Achat> listeAchats;
 	
 	
-	public Client(String nom, String prenom) {
-	
+	public Client(String nom, String prenom, List<Achat> listeAchats) {
 		this.nom = nom;
 		this.prenom = prenom;
+		this.listeAchats = listeAchats;
 	}
 
 
