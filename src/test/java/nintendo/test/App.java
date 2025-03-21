@@ -8,6 +8,9 @@ public class App {
         Jeu callOfDutyBO2 = new Jeu("Call of Duty : Black Ops 2", playStation3, 59.99);
         Jeu pokemonSoulsilver = new Jeu("Pokémon Soulsilver", ds, 59.99);
         Jeu superMarioGalaxy = new Jeu("Super Mario Galaxy", wii, 59.99);
+        
+        Adresse adresse = new Adresse(1, "rue Link", "Nantes");
+        Boutique boutique = new Boutique("Nintendo", adresse);
 	}
 }
 
