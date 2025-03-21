@@ -8,7 +8,6 @@ public class Achat {
     private double prix;
     
 	public Achat(Jeu jeu, LocalDate date, double prix) {
-		super();
 		this.jeu = jeu;
 		this.date = date;
 		this.prix = prix;
