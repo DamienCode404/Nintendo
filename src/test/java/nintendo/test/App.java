@@ -1,8 +1,13 @@
 package nintendo.test;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
+import java.io.Console;
 
 import nintendo.Console;
+import nintendo.Client;
+import nintendo.Achat;
 import nintendo.Jeu;
 
 public class App {
@@ -28,7 +33,13 @@ public class App {
         Jeu callOfDutyBO2 = new Jeu("Call of Duty : Black Ops 2", Console.playStation3, 59.99);
         Jeu pokemonSoulsilver = new Jeu("Pokémon Soulsilver", Console.ds, 59.99);
         Jeu superMarioGalaxy = new Jeu("Super Mario Galaxy", Console.wii, 59.99);
-
+        Achat a1 = new Achat(zelda, LocalDate.now(), 20);
+        List<Achat> liste1 = new ArrayList();
+        liste1.add(a1);
+        Client client1 = new Client("Malet", "Adrien", liste1);
+        Client client2 = new Client("Valentin", "Alexandre", null);
+        Client client3 = new Client("Rat", "Damien", null);
+        Client client4 = new Client("Perrault", "Guillaume", null);
 	}
 
 	private static LocalDate LocalDate(int i) {
