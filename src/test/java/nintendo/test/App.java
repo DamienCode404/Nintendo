@@ -1,7 +1,12 @@
 package nintendo.test;
 
 import java.io.Console;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
+import nintendo.Achat;
+import nintendo.Client;
 import nintendo.Jeu;
 
 public class App {
@@ -13,10 +18,14 @@ public class App {
         Jeu pokemonSoulsilver = new Jeu("Pokémon Soulsilver", Console.ds, 59.99);
         Jeu superMarioGalaxy = new Jeu("Super Mario Galaxy", Console.wii, 59.99);
         
-        Client client1 = new Client("Malet", "Adrien");
-        Client client2 = new Client("Valentin", "Alexandre");
-        Client client3 = new Client("Rat", "Damien");
-        Client client4 = new Client("Perrault", "Guillaume");
+        Achat a1 = new Achat(zelda, LocalDate.now(), 20);
+        List<Achat> liste1 = new ArrayList();
+        liste1.add(a1);
+        
+        Client client1 = new Client("Malet", "Adrien", liste1);
+        Client client2 = new Client("Valentin", "Alexandre", null);
+        Client client3 = new Client("Rat", "Damien", null);
+        Client client4 = new Client("Perrault", "Guillaume", null);
 	}
 }
 
